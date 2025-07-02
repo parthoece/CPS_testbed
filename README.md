@@ -10,21 +10,21 @@ The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attack
 
 ### Overall System Setup
 
-![System Architecture](/assets/emulation-diagram.png)  
+![System Architecture](/assets/testbed.png)  
 *Figure 1 – CPS testbed architecture showing interaction between PLC, HMIs, attackers, and physical process simulation.*
 
 ---
 
 ### System Fault Generation Flow
 
-![System Fault Flow](/assets/fault-flow-diagram.png)  
+![System Fault Flow](/assets/fault.png)  
 *Figure 2 – Workflow to generate regular system faults during operation, simulating sensor or actuator-level issues.*
 
 ---
 
 ### Cyber Attack Generation Flow
 
-![Cyber Attack Flow](/assets/cyber-attack-flow.png)  
+![Cyber Attack Flow](/assets/attack.png)  
 *Figure 3 – Cyber attack sequence starting from normal operation, activating attacker modules mid-execution for continuous attacks.*
 
 ---
@@ -107,9 +107,9 @@ xclock
 
 ### 4 — Make Shell Scripts Executable
 ```bash
-find ./cps_testbed -type f -name "*.sh" -exec chmod 555 {} \;
+find ./CPS_testbed -type f -name "*.sh" -exec chmod 555 {} \;
 # or (to retain write permission)
-find ./cps_testbed -type f -name "*.sh" -exec chmod +x {} \;
+find ./CPS_testbed -type f -name "*.sh" -exec chmod +x {} \;
 ```
 
 ---
@@ -199,7 +199,7 @@ sudo docker exec -it attackerremote  python3 /src/AttackerRemote.py
 3. Git-SCM. *Pro Git Book*  
 4. Wireshark Foundation. *Wireshark User’s Guide*  
 5. NIST. *Guide to Industrial Control Systems (ICS) Security*, SP 800-82 Rev 2  
-6. Dehlaghi-Ghadim, A. et al. (2023). *cps_testbed — A framework for building industrial control systems security testbeds*, Computers in Industry, 148, 103906. https://doi.org/10.1016/j.compind.2023.103906
+6. Dehlaghi-Ghadim, A. et al. (2023). *CPS_testbed — A framework for building industrial control systems security testbeds*, Computers in Industry, 148, 103906. https://doi.org/10.1016/j.compind.2023.103906
 
 ---
 
