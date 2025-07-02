@@ -4,6 +4,23 @@ A cyber-physical systems (CPS) testbed that emulates a water-filling factory pro
 The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attacker nodes to simulate both normal operation, common System/Physical Faults and cyber attacks.
 
 ---
+---
+
+##  Table of Contents
+
+1. [System Emulation Architecture](#system-emulation-architecture)
+2. [Testbed Capabilities](#testbed-capabilities)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Running the Testbed](#running-the-testbed)
+6. [Interacting with Containers](#interacting-with-containers)
+7. [Starting Attacks](#starting-attacks)
+8. [Docker Cheatsheet](#docker-cheatsheet)
+9. [Optional: Docker Files](#optional-docker-files)
+10. [References](#references)
+11. [License](#license)
+
+---
 
 ##  System Emulation Architecture
 
@@ -26,23 +43,7 @@ The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attack
 ![Cyber Attack Flow](/assets/attack.png)  
 *Figure 3 – Cyber attack sequence showing interaction between PLC, HMIs, attackers, and physical process simulation.*
 
----
 
-##  Table of Contents
-
-1. [System Emulation Architecture](#system-emulation-architecture)
-2. [Testbed Capabilities](#testbed-capabilities)
-3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
-5. [Running the Testbed](#running-the-testbed)
-6. [Interacting with Containers](#interacting-with-containers)
-7. [Starting Attacks](#starting-attacks)
-8. [Docker Cheatsheet](#docker-cheatsheet)
-9. [Optional: Docker Files](#optional-docker-files)
-10. [References](#references)
-11. [License](#license)
-
----
 
 ##  Testbed Capabilities
 
