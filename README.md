@@ -1,7 +1,7 @@
-# CPS Testbed for Water-Filling Factory Emulation to generate Mulit-source Operational Data (Normal, Common System/Physical Faults, Faults caused by Cyber Attack
+# CPS Testbed for Water-Filling Factory Emulation to generate Mulit-source Operational Data 
 
 A cyber-physical systems (CPS) testbed that emulates a water-filling factory process.  
-The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attacker nodes to simulate both normal operation and cyber attacks.
+The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attacker nodes to simulate both normal operation, common System/Physical Faults and cyber attacks.
 
 ---
 
@@ -10,7 +10,7 @@ The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attack
 ### Overall System Setup
 
 ![System Architecture](/assets/testbed.png)  
-*Figure 1 – CPS testbed architecture showing interaction between PLC, HMIs, attackers, and physical process simulation.*
+*Figure 1 – CPS testbed architecture showing physical process simulation.*
 
 ---
 
@@ -24,7 +24,7 @@ The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attack
 ### Cyber Attack Generation Flow
 
 ![Cyber Attack Flow](/assets/attack.png)  
-*Figure 3 – Cyber attack sequence starting from normal operation, activating attacker modules mid-execution for continuous attacks.*
+*Figure 3 – Cyber attack sequence showing interaction between PLC, HMIs, attackers, and physical process simulation.*
 
 ---
 
@@ -71,7 +71,7 @@ This testbed can simulate and generate **three distinct types of operational dat
 | Wireshark       | ≥ 4.2 (opt.)   | For packet capture             |
 
 ---
-```markdown
+
 
 ##  Installation
 
@@ -210,4 +210,4 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for full text.
 ---
 
 > Maintained by **Partho Adhikari / High Speed Network Lab**. Contributions welcome!
-```
+
