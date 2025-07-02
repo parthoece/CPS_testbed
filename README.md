@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4c319214-974e-4c4a-a6ed-ff7204df61d4)# CPS Testbed for Water-Filling Factory Emulation to generate Mulit-source Operational Data 
+
 
 A cyber-physical systems (CPS) testbed that emulates a water-filling factory process.  
 The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attacker nodes to simulate both normal operation, common System/Physical Faults and cyber attacks.
