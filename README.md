@@ -151,6 +151,10 @@ docker exec -it <container-name> bash
 ```
 
 ### Run HMI Applications
+To avoid generating the same data, engage all 3 HMI during each operational mode.
+1. **HMI1:** Responsible for showing the physical process status( Actuators, Sensors).
+2. **HMI2:** Manual instruction to mimic human in the loop( Actuators, Sensors).
+3. **HMI3:** Automatically change the physical process  within a certain range at a specific interval.
 ```bash
 sudo docker exec -it hmi2 python3 /src/HMI1.py
 sudo docker exec -it hmi2 python3 /src/HMI2.py
