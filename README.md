@@ -136,6 +136,7 @@ sudo systemctl status docker
 
 ### Start / Stop the Testbed
 ```bash
+sudo init_normal.sh              # start the simulation
 docker compose down              # stop and remove containers
 docker compose up --build        # build and start from scratch
 ```
