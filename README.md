@@ -73,7 +73,7 @@ This testbed can simulate and generate **three distinct types of operational dat
 
 ---
 
-## 🛠️ Installation
+##  Installation
 
 ### 1 — Install Git
 ```bash
