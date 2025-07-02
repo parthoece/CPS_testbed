@@ -1,4 +1,4 @@
-# CPS Testbed for Water-Filling Factory Emulation to generate Mulit-source Operational Data 
+![image](https://github.com/user-attachments/assets/4c319214-974e-4c4a-a6ed-ff7204df61d4)# CPS Testbed for Water-Filling Factory Emulation to generate Mulit-source Operational Data 
 
 A cyber-physical systems (CPS) testbed that emulates a water-filling factory process.  
 The architecture includes Human-Machine Interfaces (HMIs), PLC logic, and attacker nodes to simulate both normal operation, common System/Physical Faults and cyber attacks.
@@ -151,10 +151,18 @@ docker exec -it <container-name> bash
 ```
 
 ### Run HMI Applications
-To avoid generating the same data, engage all 3 HMI during each operational mode.
-1. **HMI1:** Responsible for showing the physical process status( Actuators, Sensors).
-2. **HMI2:** Manual instruction to mimic human in the loop( Actuators, Sensors).
-3. **HMI3:** Automatically change the physical process  within a certain range at a specific interval.
+To avoid generating the same data, engage all 3 HMI during each operational mode. 
+
+1. **HMI1:** real-time physical process status( Actuators, Sensors).
+2. **HMI2:** manual instruction to mimic human in the loop( actuators, sensors).
+3. **HMI3:** auto mode (Specific ranges fixed  for Min-max sensor level)
+
+   ![HMI Interaction during Normal & Fault mode](/assets/hmi.png)  
+*Figure 4 – HMI User Interaction - HMI1, HMI2, HMI3.*
+> Under normal operation, the sensor status changes according to the command sent.
+> Also verify system faults – by sending control command vs real-time response
+> Here, sensor drift and valve sticking faults are visible
+
 ```bash
 sudo docker exec -it hmi2 python3 /src/HMI1.py
 sudo docker exec -it hmi2 python3 /src/HMI2.py
