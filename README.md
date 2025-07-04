@@ -74,6 +74,10 @@ This testbed can simulate and generate **three distinct types of operational dat
 
 
 ##  Installation
+### clone the testbed
+```
+git clone https://github.com/parthoece/CPS_testbed.git
+```
 
 ### 1 — Install Git
 ```bash
@@ -136,9 +140,11 @@ sudo systemctl status docker
 
 ### Start / Stop the Testbed
 ```bash
+cd CPS_testbed/deployments
 sudo ./init_normal.sh              # start the simulation
 docker compose down              # stop and remove containers
 docker compose up --build        # build and start from scratch
+sudo docker commpose ps
 ```
 
 ---
