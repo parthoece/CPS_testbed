@@ -228,5 +228,5 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for full text.
 
 ---
 
-> Maintained by **Partho Adhikari / High Speed Network Lab**. Contributions welcome!
+> Contributions welcome!
 
