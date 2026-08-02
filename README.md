@@ -211,13 +211,18 @@ The HMIs are used as follows:
 
 ### 6. Generate Cyberattack Data
 
+> **Operating-system requirement**
+>
+> Cyberattack data generation should be performed on **Kali Linux**. The attack workflow may not run correctly on other Linux distributions because the required attack components and system configuration can differ.
+
 A cyberattack experiment is started from normal operation.
 
 1. Move or archive the output files from the previous operation.
-2. Run `sudo ./init_normal.sh`.
-3. Select `1) Normal Operation`.
-4. Start HMI1, HMI2, and HMI3.
-5. Start the attacker modules from separate terminals:
+2. Confirm that the host environment is running Kali Linux.
+3. Run `sudo ./init_normal.sh`.
+4. Select `1) Normal Operation`.
+5. Start HMI1, HMI2, and HMI3.
+6. Start the attacker modules from separate terminals:
 
 ```bash
 sudo docker exec -it attackermachine python3 /src/AttackerMachine.py
@@ -233,8 +238,8 @@ For remote attack execution, configure the MQTT connection and run:
 sudo docker exec -it attackerremote python3 /src/AttackerRemote.py
 ```
 
-6. Operate the testbed for the required experiment duration.
-7. Preserve the generated PLC snapshots, syslog records, and network-traffic capture as cyberattack data.
+7. Operate the testbed for the required experiment duration.
+8. Preserve the generated PLC snapshots, syslog records, and network-traffic capture as cyberattack data.
 
 ### 7. Stop the Testbed
 
